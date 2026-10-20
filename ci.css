@@ -1,0 +1,103 @@
+/* ==========================================================================
+   ci.css – Corporate Design Boxsport Harz (freigegeben 20.10.2026)
+   Farben: Ring-Schwarz #121214 · Rot #DD0000 · Gold #FFCE00 · Weiß
+   Schwarz-Rot-Gold-Akzent (#000000 / #DD0000 / #FFCE00)
+   Headlines: Barlow Condensed (SIL OFL 1.1, selbst gehostet, resources/ci/fonts/OFL.txt)
+   Wird NACH main.css, colorscheme.css und style.css geladen und überschreibt nur Design.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url(resources/ci/fonts/barlow-condensed-700.woff2) format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url(resources/ci/fonts/barlow-condensed-800-italic.woff2) format("woff2");
+  font-weight: 800; font-style: italic; font-display: swap;
+}
+
+:root {
+  --bh-black: #121214;
+  --bh-black-2: #1d1d21;
+  --bh-red: #DD0000;
+  --bh-red-dark: #a80000;
+  --bh-gold: #FFCE00;
+  --bh-white: #FFFFFF;
+  --bh-text: #1d1d20;
+  --bh-flag: linear-gradient(to bottom, #000000 0 33.34%, #DD0000 33.34% 66.67%, #FFCE00 66.67% 100%);
+  --bh-head: "Barlow Condensed", Arial, Helvetica, sans-serif;
+}
+
+/* --- Seite & Container ---------------------------------------------------- */
+body#main_body { background-color: var(--bh-black); color: var(--bh-text); }
+#container { background-color: var(--bh-white); }
+
+/* --- Header: dunkel, Logo links, Slogan + Navigation rechts --------------- */
+#header { background-color: var(--bh-black); }
+#logo {
+  background: url(resources/ci/boxsport-harz-logo-weiss.png) no-repeat center center;
+  background-size: 104px 88px;
+  width: 150px; height: 100px; left: 20px; top: 0;
+}
+#slogan {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic;
+  font-size: 23px; line-height: 1.15; letter-spacing: .01em;
+  color: var(--bh-white); padding: 22px 14px 12px 0;
+}
+#main_nav_container {
+  background: var(--bh-black-2) none; border-color: var(--bh-red);
+  margin: 0 0 12px 0;
+}
+a.main_nav_item, a.main_nav_active_item, a.main_nav_item:hover {
+  background: none; color: var(--bh-white);
+  font-family: Arial, Verdana, sans-serif; font-size: 12px; font-weight: bold;
+  letter-spacing: .02em;
+}
+#main_nav_list a { line-height: 25px; height: 25px; }
+a.main_nav_active_item, a.main_nav_item:hover, a.main_nav_item:focus {
+  background-color: var(--bh-red); color: var(--bh-white);
+}
+
+/* Key Visual bleibt; darunter Schwarz-Rot-Gold-Leiste */
+#key_b { height: 9px; font-size: 1px; background: var(--bh-flag); }
+
+/* --- Unternavigation (links) --------------------------------------------- */
+.sub_nav_list a, a.sub_nav_item, a.sub_nav_active_item, a.sub_nav_item:hover {
+  background: #f1f1f3 none; color: var(--bh-black);
+  border-left: 4px solid var(--bh-black);
+  padding: 0 5px 0 10px; width: 138px;
+  font-family: Arial, Verdana, sans-serif; font-size: 11px; font-weight: bold;
+}
+html>body .sub_nav_list a { width: 138px; }
+a.sub_nav_active_item, a.sub_nav_item:hover, a.sub_nav_item:focus {
+  background-color: var(--bh-red); color: var(--bh-white); border-left-color: var(--bh-gold);
+}
+
+/* --- Inhalt --------------------------------------------------------------- */
+.content, .content p, .content table, .content select, .content input, .content textarea { color: var(--bh-text); }
+.content h1, .content h2, .content h3 {
+  font-family: var(--bh-head) !important; font-weight: 700; letter-spacing: .01em; line-height: 1.15;
+}
+.content h1 { color: var(--bh-black); font-size: 34px; }
+.content h2 { color: var(--bh-red-dark); font-size: 27px; }
+.content h3 { color: var(--bh-black); font-size: 21px; }
+/* Boxen-Überschriften der Startseite (Inline-Stil) in CI-Schrift */
+#aktuelles_2026 > p:first-child, #rueckblick > p:first-child {
+  font-family: var(--bh-head) !important; font-size: 30px !important; letter-spacing: .01em;
+}
+.content a:link { color: #b00000; }
+.content a:visited { color: #7a0d0d; }
+.content a:hover, .content a:focus { color: var(--bh-black); text-decoration: underline; }
+.content a:active { color: var(--bh-red); }
+
+/* Tabellen */
+.content table, .content td, .content th, .content input, .content textarea, .content fieldset { border-color: #c9c9ce; }
+.content th { background-color: var(--bh-black); color: var(--bh-white); }
+.content tr.even { background-color: #f4f4f5; }
+.content legend, .content label { color: var(--bh-black); }
+
+/* --- Footer: Schwarz-Rot-Gold-Leiste ------------------------------------- */
+#footer_b { height: 9px; font-size: 1px; background: var(--bh-flag); }
+#footer_text, #footer_text a { color: #4a4a50; }
+#footer_text a:hover { color: var(--bh-red); }
