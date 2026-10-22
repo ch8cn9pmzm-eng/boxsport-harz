@@ -127,3 +127,129 @@ p.bh-ticket-row { margin: 14px 0 6px 0 !important; }
   font-size: 14px; padding: 3px 9px 2px 9px; border-bottom-width: 3px; box-shadow: none; vertical-align: 1px;
 }
 .bh-ticket-note.bh-ticket-sm { border-left-width: 4px; }
+
+/* --- Werbepartner: Paket-Übersicht (Werbung.html) und Hinweis-Block (Startseite) --- */
+.bh-hero {
+  position: relative; overflow: hidden; background: var(--bh-black); color: var(--bh-white);
+  padding: 22px 26px 22px 26px; margin: 6px 0 0 0;
+  display: flex; align-items: center; gap: 22px;
+}
+.bh-hero::before {
+  content: ""; position: absolute; right: -90px; top: -30px; width: 300px; height: 80px;
+  transform: rotate(28deg); background: linear-gradient(#ffffff 0 5%, #000000 5% 36%, #DD0000 36% 68%, #FFCE00 68%);
+}
+.bh-hero img { width: 130px; height: auto; flex: 0 0 130px; position: relative; }
+.bh-hero-text { position: relative; }
+.bh-hero-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 40px; line-height: .95; color: var(--bh-white); margin: 0 0 8px 0;
+}
+.bh-hero-title span { color: var(--bh-gold); display: block; }
+.bh-hero-sub { color: #d4d4d9; font-size: 14px; line-height: 1.4; margin: 0 0 14px 0; }
+.bh-flagbar { height: 9px; font-size: 1px; background: var(--bh-flag); margin: 0 0 18px 0; }
+.content .bh-intro { text-align: center; font-size: 14px; line-height: 1.45; color: #1d1d20; margin: 0 0 18px 0; }
+.content .bh-section-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 28px; color: var(--bh-black); margin: 22px 0 10px 0; line-height: 1;
+}
+.content .bh-section-title::after {
+  content: ""; display: block; width: 80px; height: 4px; margin-top: 5px;
+  background: linear-gradient(90deg, #000000 0 33%, #DD0000 33% 66%, #FFCE00 66%);
+}
+.bh-packages { display: flex; gap: 14px; align-items: stretch; margin: 0 0 14px 0; }
+.bh-pk { flex: 1 1 0; border: 2px solid var(--bh-black); display: flex; flex-direction: column; background: #fff; }
+.bh-pk-head { background: var(--bh-black); color: var(--bh-white); padding: 10px 12px 9px 12px; }
+.bh-pk-name {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 26px; line-height: 1; display: block;
+}
+.bh-pk-tag { font-size: 12px; color: #b9b9bf; display: block; margin-top: 3px; }
+.bh-pk.bh-pk-main { border-color: var(--bh-red); }
+.bh-pk.bh-pk-main .bh-pk-head { background: var(--bh-red); }
+.bh-pk.bh-pk-main .bh-pk-tag { color: #ffe3e3; }
+.bh-pk ul { margin: 0; padding: 10px 12px 6px 28px; font-size: 13px; line-height: 1.4; color: #1d1d20; flex: 1 1 auto; }
+.bh-pk li { margin-bottom: 5px; }
+.bh-pk-price { border-top: 1px solid #e1e1e5; padding: 9px 12px 4px 12px; color: #55555b; font-size: 12px; }
+.bh-pk-price b {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; font-size: 36px; color: var(--bh-black); line-height: 1;
+}
+.bh-pk-main .bh-pk-price b { color: var(--bh-red); }
+.bh-pk-cta { padding: 4px 12px 12px 12px; }
+.content a.bh-btn, .content a.bh-btn:link, .content a.bh-btn:visited {
+  display: inline-block; background: var(--bh-red); color: var(--bh-white);
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 21px; letter-spacing: .03em; line-height: 1.1; text-decoration: none;
+  padding: 8px 18px 7px 18px; border-bottom: 4px solid var(--bh-gold);
+}
+.content a.bh-btn:hover, .content a.bh-btn:focus { background: var(--bh-gold); color: var(--bh-black); text-decoration: none; border-bottom-color: var(--bh-red); }
+.content a.bh-btn.bh-btn-dark, .content a.bh-btn.bh-btn-dark:link, .content a.bh-btn.bh-btn-dark:visited {
+  background: transparent; color: var(--bh-white); border: 2px solid var(--bh-white); border-bottom: 4px solid var(--bh-gold); padding: 6px 16px 5px 16px;
+}
+.content a.bh-btn.bh-btn-dark:hover, .content a.bh-btn.bh-btn-dark:focus { background: var(--bh-white); color: var(--bh-black); }
+.content a.bh-btn.bh-btn-light, .content a.bh-btn.bh-btn-light:link, .content a.bh-btn.bh-btn-light:visited {
+  background: var(--bh-white); color: var(--bh-black); border: 2px solid var(--bh-black); border-bottom: 4px solid var(--bh-red); padding: 6px 16px 5px 16px;
+}
+.content a.bh-btn.bh-btn-light:hover, .content a.bh-btn.bh-btn-light:focus { background: var(--bh-black); color: var(--bh-gold); }
+.content a.bh-btn.bh-btn-sm, .content a.bh-btn.bh-btn-sm:link, .content a.bh-btn.bh-btn-sm:visited { font-size: 16px; padding: 5px 12px 4px 12px; border-bottom-width: 3px; }
+.content a.bh-btn::after { content: " \203A"; }
+.bh-addon {
+  background: var(--bh-black); color: var(--bh-white); border-left: 7px solid var(--bh-gold);
+  padding: 14px 18px; display: flex; gap: 18px; align-items: center; margin: 0 0 6px 0;
+}
+.bh-addon-text { flex: 1 1 auto; }
+.bh-addon-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 26px; color: var(--bh-gold); line-height: 1; margin: 0 0 4px 0;
+}
+.bh-addon-sub { font-size: 12px; color: #c9c9ce; margin: 0 0 6px 0; }
+.bh-addon ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.4; color: #f1f1f3; }
+.bh-addon-price { flex: 0 0 170px; text-align: right; font-size: 12px; color: #d4d4d9; }
+.bh-addon-price b {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; font-size: 44px; color: var(--bh-gold); line-height: 1; display: block;
+}
+.content a.bh-addon-link, .content a.bh-addon-link:link, .content a.bh-addon-link:visited { color: var(--bh-gold); font-weight: bold; font-size: 13px; }
+.bh-terms { display: flex; gap: 14px; margin: 0 0 6px 0; }
+.bh-terms > div { flex: 1 1 0; background: #f4f4f5; border-top: 4px solid var(--bh-black); padding: 12px 14px; }
+.bh-terms > div:nth-child(2) { border-top-color: var(--bh-red); }
+.bh-terms-title {
+  font-family: var(--bh-head); font-weight: 700; font-style: italic; text-transform: uppercase;
+  font-size: 19px; color: var(--bh-black); margin: 0 0 6px 0;
+}
+.bh-terms ul { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.45; color: #1d1d20; }
+.bh-terms li { margin-bottom: 4px; }
+.bh-cta {
+  background: var(--bh-black); color: var(--bh-white); text-align: center; padding: 22px 20px 20px 20px; margin: 22px 0 8px 0;
+  border-top: 9px solid transparent; border-image: linear-gradient(to bottom, #000000 0 33.34%, #DD0000 33.34% 66.67%, #FFCE00 66.67% 100%) 1;
+}
+.bh-cta-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 34px; line-height: 1; color: var(--bh-white); margin: 0 0 8px 0;
+}
+.bh-cta-title span { color: var(--bh-gold); }
+.bh-cta p { color: #d4d4d9 !important; font-size: 14px; line-height: 1.45; margin: 0 0 14px 0; }
+.bh-cta .bh-cta-mail { margin: 12px 0 0 0; font-size: 13px; }
+.content .bh-cta a.bh-mail, .content .bh-cta a.bh-mail:link, .content .bh-cta a.bh-mail:visited { color: var(--bh-gold); font-weight: bold; }
+.bh-btnrow { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.bh-hero .bh-btnrow { justify-content: flex-start; }
+
+/* Hinweis-Block Startseite */
+.bh-teaser {
+  position: relative; overflow: hidden; background: var(--bh-black); color: var(--bh-white);
+  display: flex; align-items: center; gap: 16px; padding: 13px 18px 13px 16px; margin: 4px 0 18px 0;
+  border-left: 7px solid var(--bh-red); border-bottom: 4px solid var(--bh-gold);
+}
+.bh-teaser img { width: 72px; height: auto; flex: 0 0 72px; }
+.bh-teaser-text { flex: 1 1 auto; }
+.bh-teaser-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 27px; line-height: 1; color: var(--bh-white); margin: 0 0 4px 0;
+}
+.bh-teaser-title span { color: var(--bh-gold); white-space: nowrap; }
+.bh-teaser-sub { font-size: 12.5px; line-height: 1.4; color: #d4d4d9; margin: 0; }
+.bh-teaser-sub b { color: var(--bh-white); }
+/* Farben im dunklen Block gegen .content p / .content h1 absichern */
+.content .bh-hero h1.bh-hero-title { color: var(--bh-white); font-size: 40px; margin: 0 0 8px 0; }
+.content .bh-hero p.bh-hero-sub, .content .bh-cta p, .content .bh-teaser p.bh-teaser-sub { color: #d4d4d9; }
+.content .bh-addon p.bh-addon-sub { color: #c9c9ce; }
+.content .bh-teaser p.bh-teaser-sub b { color: var(--bh-white); }
+.content a.bh-btn { white-space: nowrap; }
