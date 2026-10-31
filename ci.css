@@ -253,3 +253,31 @@ p.bh-ticket-row { margin: 14px 0 6px 0 !important; }
 .content .bh-addon p.bh-addon-sub { color: #c9c9ce; }
 .content .bh-teaser p.bh-teaser-sub b { color: var(--bh-white); }
 .content a.bh-btn { white-space: nowrap; }
+
+/* --- Dual-CTA unter Event-Tickets (Mitglied + Werbung), freigegeben 31.10.2026 --- */
+.bh-event-cta {
+  background: var(--bh-black); color: var(--bh-white);
+  margin: 0 0 18px 0; padding: 14px 14px 16px 14px;
+  border-top: 9px solid transparent;
+  border-image: linear-gradient(to bottom, #000000 0 33.34%, #DD0000 33.34% 66.67%, #FFCE00 66.67% 100%) 1;
+}
+.bh-event-cta-head { text-align: center; margin: 0 0 10px 0; }
+.bh-event-cta-head img { width: 56px; height: auto; vertical-align: middle; }
+.bh-event-cta-part {
+  background: var(--bh-black-2); border-left: 5px solid var(--bh-red);
+  padding: 12px 14px 14px 14px; margin: 0 0 10px 0;
+}
+.bh-event-cta-part:last-child { border-left-color: var(--bh-gold); margin-bottom: 0; }
+.bh-event-cta-title {
+  font-family: var(--bh-head); font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 20px; line-height: 1.15; color: var(--bh-gold); margin: 0 0 8px 0;
+}
+.content .bh-event-cta p {
+  color: #d4d4d9 !important; font-size: 13px; line-height: 1.45; margin: 0 0 12px 0;
+}
+.content .bh-event-cta a.bh-btn,
+.content .bh-event-cta a.bh-btn:link,
+.content .bh-event-cta a.bh-btn:visited {
+  white-space: normal; text-align: center; max-width: 100%; box-sizing: border-box;
+  display: inline-block;
+}
