@@ -281,3 +281,330 @@ p.bh-ticket-row { margin: 14px 0 6px 0 !important; }
   white-space: normal; text-align: center; max-width: 100%; box-sizing: border-box;
   display: inline-block;
 }
+
+/* ==========================================================================
+   Mobile / Responsive (2026-11-01) – Desktop-Layout unverändert oberhalb 900px
+   ========================================================================== */
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+/* Hamburger-Button & Panel (per JS eingefügt; auf Desktop unsichtbar) */
+.bh-menu-toggle {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  z-index: 40;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid var(--bh-gold);
+  border-radius: 4px;
+  background: var(--bh-black-2);
+  color: var(--bh-white);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.bh-menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--bh-white);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.bh-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.bh-menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.bh-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.bh-menu-toggle:focus-visible {
+  outline: 2px solid var(--bh-gold);
+  outline-offset: 2px;
+}
+
+.bh-mobile-panel {
+  display: none;
+  clear: both;
+  background: var(--bh-black-2);
+  border-top: 1px solid #2a2a30;
+  border-bottom: 4px solid var(--bh-gold);
+  padding: 8px 0 12px 0;
+}
+.bh-mobile-panel[hidden] { display: none !important; }
+.bh-mobile-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bh-mobile-panel .bh-mobile-label {
+  margin: 10px 16px 4px 16px;
+  font-family: var(--bh-head);
+  font-weight: 800;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--bh-gold);
+}
+.bh-mobile-panel a {
+  display: block;
+  min-height: 44px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  color: var(--bh-white);
+  text-decoration: none;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 4px solid transparent;
+  line-height: 1.25;
+}
+.bh-mobile-panel a:hover,
+.bh-mobile-panel a:focus,
+.bh-mobile-panel a.is-active {
+  background: var(--bh-red);
+  border-left-color: var(--bh-gold);
+  color: var(--bh-white);
+}
+
+.bh-table-scroll {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 0 15px 0;
+}
+
+@media screen and (max-width: 900px) {
+  body#main_body {
+    overflow-x: hidden;
+  }
+
+  #container,
+  #header,
+  #footer,
+  #footer_b,
+  #key_visual,
+  #key_b {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  #container,
+  #main_container {
+    overflow-x: hidden;
+  }
+
+  #header {
+    float: none;
+    padding-bottom: 4px;
+    min-height: 88px;
+  }
+
+  #logo {
+    width: 88px !important;
+    height: 74px !important;
+    left: 10px !important;
+    top: 8px !important;
+    background-size: 78px 66px !important;
+    float: left;
+  }
+
+  #slogan {
+    float: none !important;
+    width: auto !important;
+    max-width: calc(100% - 160px);
+    margin-left: 100px;
+    margin-right: 64px;
+    padding: 14px 8px 8px 0 !important;
+    text-align: left !important;
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Desktop-Hauptnav und Seitenleiste zugunsten des Hamburger-Menüs ausblenden */
+  #main_nav_container {
+    display: none !important;
+  }
+  #layout_table td#sub_nav_column,
+  #sub_nav_column {
+    display: none !important;
+  }
+  #left_column_container,
+  .sub_nav_container,
+  .sub_nav_list {
+    display: none !important;
+  }
+
+  .bh-menu-toggle {
+    display: inline-flex;
+  }
+
+  body.bh-nav-open .bh-mobile-panel {
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+
+  #key_visual {
+    height: 72px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  #layout_table,
+  #layout_table tbody,
+  #layout_table tr {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  #layout_table td#content_column,
+  #content_column {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  #sub_container2,
+  #content_container {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding: 12px 14px 20px 14px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Lesbarkeit */
+  .content,
+  .content p,
+  .content li,
+  .content td,
+  .content th,
+  .content a {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  .content h1 { font-size: 28px !important; }
+  .content h2 { font-size: 24px !important; }
+  .content h3 { font-size: 20px !important; }
+  #aktuelles_2026 > p:first-child,
+  #rueckblick > p:first-child {
+    font-size: 26px !important;
+  }
+
+  /* Inline-Schriftgrößen der alten Seiten anheben (ohne Text zu ändern) */
+  .content [style*="font-size:12px"],
+  .content [style*="font-size: 12px"],
+  .content [style*="font-size:13px"],
+  .content [style*="font-size: 13px"],
+  .content [style*="font-size:14px"],
+  .content [style*="font-size: 14px"] {
+    font-size: 16px !important;
+  }
+
+  /* Bilder responsiv */
+  .content img,
+  #content_container img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Werbung / Teaser mobil stapeln */
+  .bh-hero,
+  .bh-teaser,
+  .bh-addon,
+  .bh-packages,
+  .bh-terms,
+  .bh-btnrow {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .bh-hero { padding: 18px 16px !important; gap: 14px !important; }
+  .bh-hero img { width: 96px !important; flex-basis: auto !important; }
+  .bh-hero-title,
+  .content .bh-hero h1.bh-hero-title { font-size: 30px !important; }
+  .bh-teaser { padding: 14px !important; gap: 12px !important; }
+  .bh-teaser-title { font-size: 22px !important; white-space: normal; }
+  .bh-teaser-title span { white-space: normal; }
+  .bh-teaser-sub { font-size: 15px !important; }
+  .bh-packages { gap: 12px !important; }
+  .bh-pk { width: 100%; }
+  .bh-addon { flex-wrap: wrap; }
+  .bh-addon-price { flex: 1 1 100% !important; text-align: left !important; margin-top: 8px; }
+  .bh-terms > div { flex: 1 1 100%; }
+  .content a.bh-btn,
+  .content a.bh-btn:link,
+  .content a.bh-btn:visited,
+  .content a.bh-ticket,
+  .content a.bh-ticket:link,
+  .content a.bh-ticket:visited {
+    white-space: normal !important;
+    min-height: 44px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .bh-cta-title { font-size: 26px !important; }
+  .bh-pk-name { font-size: 22px !important; }
+  .bh-pk-price b { font-size: 32px !important; }
+  .bh-addon-title { font-size: 22px !important; }
+  .bh-addon-price b { font-size: 36px !important; }
+  .bh-section-title { font-size: 24px !important; }
+
+  #footer {
+    width: 100% !important;
+  }
+  #footer_text {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 10px 14px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+  }
+  #footer_text a {
+    font-size: 14px !important;
+    white-space: normal !important;
+    display: inline-block;
+    margin: 4px 8px;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  #footer_text span[style*="margin-right"] {
+    display: none;
+  }
+
+  /* Tabellen: horizontal scrollbar im Container */
+  .content .bh-table-scroll > table,
+  .content table {
+    max-width: none;
+  }
+  .bh-table-scroll {
+    border: 1px solid #c9c9ce;
+    background: #fff;
+  }
+  .bh-table-scroll table {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #slogan {
+    font-size: 13px !important;
+    max-width: calc(100% - 150px);
+  }
+  #key_visual { height: 56px !important; }
+  .bh-hero-title,
+  .content .bh-hero h1.bh-hero-title { font-size: 26px !important; }
+}
