@@ -1,0 +1,32 @@
+{
+  "name": "Boxsport Harz",
+  "short_name": "Boxsport Harz",
+  "lang": "de",
+  "description": "Boxsport im Landkreis Harz – Amateur- und Profi-Boxsport rund um Blankenburg.",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#121214",
+  "background_color": "#121214",
+  "icons": [
+    {
+      "src": "/resources/ci/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/resources/ci/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/resources/ci/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

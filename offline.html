@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121214">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Boxsport Harz">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <title>Offline – Boxsport Harz</title>
+  <style>
+    :root {
+      --bh-black: #121214;
+      --bh-red: #DD0000;
+      --bh-gold: #FFCE00;
+      --bh-white: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, Verdana, sans-serif;
+      background: var(--bh-black);
+      color: var(--bh-white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .flag {
+      width: 100%;
+      max-width: 280px;
+      height: 12px;
+      background: linear-gradient(to right, #000000 0 33.34%, #DD0000 33.34% 66.67%, #FFCE00 66.67% 100%);
+      margin-bottom: 24px;
+      border-radius: 2px;
+    }
+    img.logo {
+      width: 160px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 0 12px;
+      letter-spacing: 0.02em;
+    }
+    p {
+      margin: 0 0 20px;
+      max-width: 28rem;
+      line-height: 1.5;
+      color: #e1e1e5;
+    }
+    a.btn {
+      display: inline-block;
+      background: var(--bh-red);
+      color: var(--bh-white);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 22px;
+      border-radius: 4px;
+      border-bottom: 3px solid var(--bh-gold);
+    }
+    a.btn:hover { background: #a80000; }
+  </style>
+  <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js");});}</script>
+</head>
+<body>
+  <div class="flag" aria-hidden="true"></div>
+  <img class="logo" src="/resources/ci/icon-192.png" alt="Boxsport Harz">
+  <h1>Keine Verbindung</h1>
+  <p>Du bist gerade offline. Sobald das Internet wieder da ist, kannst du die Seite neu laden.</p>
+  <a class="btn" href="/">Zur Startseite</a>
+</body>
+</html>
