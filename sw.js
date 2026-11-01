@@ -1,5 +1,5 @@
 /* Boxsport Harz PWA service worker */
-const CACHE_VERSION = 'boxsport-harz-v3-20261101-cal';
+const CACHE_VERSION = 'boxsport-harz-v4-20261101-push';
 const OFFLINE_URL = '/offline.html';
 const PRECACHE = [
   OFFLINE_URL,
