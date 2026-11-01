@@ -1,12 +1,12 @@
 /* Boxsport Harz PWA service worker */
-const CACHE_VERSION = 'boxsport-harz-v6-20261101-app';
+const CACHE_VERSION = 'boxsport-harz-v7-20261101-kompakt';
 const OFFLINE_URL = '/offline.html';
 const PRECACHE = [
   OFFLINE_URL,
   '/manifest.webmanifest',
   '/resources/ci/icon-192.png',
   '/resources/ci/icon-512.png',
-  '/ci.css?v=20261101d',
+  '/ci.css?v=20261101e',
   '/main.css',
   '/style.css',
   '/mobile.js',
