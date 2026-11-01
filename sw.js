@@ -1,5 +1,5 @@
 /* Boxsport Harz PWA service worker */
-const CACHE_VERSION = 'boxsport-harz-v1-20261101';
+const CACHE_VERSION = 'boxsport-harz-v2-20261101';
 const OFFLINE_URL = '/offline.html';
 const PRECACHE = [
   OFFLINE_URL,
@@ -9,7 +9,10 @@ const PRECACHE = [
   '/ci.css?v=20261101',
   '/main.css',
   '/style.css',
-  '/mobile.js'
+  '/mobile.js',
+  '/App.html',
+  '/resources/app-install.js',
+  '/resources/app-qr.png'
 ];
 
 self.addEventListener('install', (event) => {
