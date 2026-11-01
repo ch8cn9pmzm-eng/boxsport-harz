@@ -1,12 +1,12 @@
 /* Boxsport Harz PWA service worker */
-const CACHE_VERSION = 'boxsport-harz-v5-20261101-kalender';
+const CACHE_VERSION = 'boxsport-harz-v6-20261101-app';
 const OFFLINE_URL = '/offline.html';
 const PRECACHE = [
   OFFLINE_URL,
   '/manifest.webmanifest',
   '/resources/ci/icon-192.png',
   '/resources/ci/icon-512.png',
-  '/ci.css?v=20261101c',
+  '/ci.css?v=20261101d',
   '/main.css',
   '/style.css',
   '/mobile.js',
@@ -14,6 +14,7 @@ const PRECACHE = [
   '/Rueckblick.html',
   '/index.html',
   '/resources/app-install.js',
+  '/resources/app-push.js',
   '/resources/kalender-speichern.js',
   '/resources/app-qr.png'
 ];

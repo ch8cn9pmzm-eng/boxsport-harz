@@ -647,3 +647,46 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .bh-cal-row { width: 100%; }
   .bh-cal-row .bh-cal-save { width: 100%; text-align: center; box-sizing: border-box; }
 }
+
+
+/* Compact App/PWA teaser on start page */
+.bh-app-teaser { margin: 0 0 14px 0; padding: 11px 14px 11px 12px; gap: 12px; }
+.bh-app-teaser img { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 12px; background: #1d1d21; }
+.bh-app-teaser .bh-teaser-title { font-size: 22px; margin: 0 0 3px 0; }
+.bh-app-teaser .bh-teaser-sub { font-size: 12.5px; margin: 0 0 8px 0; }
+.bh-app-teaser-actions {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;
+}
+.content .bh-app-teaser a.bh-btn.bh-btn-sm,
+.content .bh-app-teaser a.bh-btn.bh-btn-sm:link,
+.content .bh-app-teaser a.bh-btn.bh-btn-sm:visited {
+  font-size: 14px; padding: 6px 12px 5px 12px; border-bottom-width: 3px;
+}
+.content .bh-app-teaser button.bh-btn.bh-push-enable {
+  display: inline-block; background: var(--bh-red); color: #fff; font-size: 14px; font-weight: bold;
+  padding: 6px 12px 5px 12px; border: 0; border-bottom: 3px solid var(--bh-gold); border-radius: 4px;
+  cursor: pointer; font-family: Arial, Helvetica, Verdana, sans-serif; white-space: nowrap;
+}
+.content .bh-app-teaser button.bh-btn.bh-push-enable:hover { background: var(--bh-gold); color: var(--bh-black); }
+.content .bh-app-teaser button.bh-btn.bh-push-enable:disabled { opacity: 0.65; cursor: default; }
+.content .bh-app-teaser a.bh-app-howto,
+.content .bh-app-teaser a.bh-app-howto:link,
+.content .bh-app-teaser a.bh-app-howto:visited {
+  color: var(--bh-gold); font-size: 13px; font-weight: bold; text-decoration: underline; white-space: nowrap;
+}
+.content .bh-app-teaser a.bh-app-howto:hover { color: #fff; }
+.bh-app-howto-emphasis { font-size: 14px !important; }
+@media screen and (max-width: 640px) {
+  .bh-app-teaser { align-items: flex-start; padding: 9px 10px 9px 9px; gap: 8px; margin: 0 0 10px 0; }
+  .bh-app-teaser img { width: 44px; height: 44px; flex: 0 0 44px; border-radius: 10px; }
+  .bh-app-teaser .bh-teaser-title { font-size: 17px !important; white-space: normal; line-height: 1.15; }
+  .bh-app-teaser .bh-teaser-sub { font-size: 12px; margin: 0 0 6px 0; line-height: 1.35; }
+  .bh-app-teaser-actions { width: 100%; gap: 6px 8px; }
+  .content .bh-app-teaser a.bh-btn.bh-btn-sm,
+  .content .bh-app-teaser a.bh-btn.bh-btn-sm:link,
+  .content .bh-app-teaser a.bh-btn.bh-btn-sm:visited,
+  .content .bh-app-teaser button.bh-btn.bh-push-enable {
+    flex: 1 1 auto; text-align: center; box-sizing: border-box;
+    font-size: 13px; padding: 5px 8px 4px 8px;
+  }
+}
