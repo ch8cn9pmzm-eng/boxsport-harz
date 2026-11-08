@@ -302,5 +302,21 @@
     "end_date_exclusive": "20270315",
     "source": "Kalender.html: 13./14.03.2027; Austragungsort noch nicht veröffentlicht; keine Uhrzeit → ganztägig",
     "page_url": "https://www.boxsport-harz.de/Kalender.html"
+  },
+  {
+    "id": "braugold-cup-2027-09-18",
+    "summary": "Braugold-Cup",
+    "location": "",
+    "ics": "resources/ics/braugold-cup-2027-09-18.ics",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Braugold-Cup&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FBraugold-Cup-2027-09-18.html&ctz=Europe%2FBerlin&dates=20270918%2F20270919",
+    "page": "Braugold-Cup-2027-09-18.html",
+    "kalender_match": "Braugold-Cup",
+    "all_day": true,
+    "start_dt": null,
+    "end_dt": null,
+    "start_date": "20270918",
+    "end_date_exclusive": "20270919",
+    "source": "Thüringer Box-Verband: 18.09.2027, Veranstalter PSV Erfurt; Austragungsstätte, Beginn und Eintritt nicht veröffentlicht → ganztägig, ohne Ort",
+    "page_url": "https://www.boxsport-harz.de/Braugold-Cup-2027-09-18.html"
   }
 ]
