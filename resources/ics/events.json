@@ -96,6 +96,22 @@
     "page_url": "https://www.boxsport-harz.de/SES-Boxen-Magdeburg-2026-11-14.html"
   },
   {
+    "id": "profiboxen-korbach-2026-11-14",
+    "summary": "Profiboxen in Korbach",
+    "location": "Stadthalle Korbach, Medebacher Landstraße 10, 34497 Korbach",
+    "ics": "resources/ics/profiboxen-korbach-2026-11-14.ics",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Profiboxen%20in%20Korbach&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FProfiboxen-Korbach-2026-11-14.html&location=Stadthalle%20Korbach%2C%20Medebacher%20Landstra%C3%9Fe%2010%2C%2034497%20Korbach&ctz=Europe%2FBerlin&dates=20261114T190000%2F20261114T230000",
+    "page": "Profiboxen-Korbach-2026-11-14.html",
+    "kalender_match": "Profiboxen in Korbach",
+    "all_day": false,
+    "start_dt": "20261114T190000",
+    "end_dt": "20261114T230000",
+    "start_date": null,
+    "end_date_exclusive": null,
+    "source": "Eventseite: Beginn 19 Uhr; Ende 23:00 (Regel ohne Endzeit)",
+    "page_url": "https://www.boxsport-harz.de/Profiboxen-Korbach-2026-11-14.html"
+  },
+  {
     "id": "burgpokal-eilenburg-2026-11-14",
     "summary": "Burgpokal 2026",
     "location": "Boxhalle Eilenburg („Haus 6“), Dr.-Belian-Straße 6, 04838 Eilenburg",
