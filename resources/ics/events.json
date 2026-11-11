@@ -288,6 +288,22 @@
     "page_url": "https://www.boxsport-harz.de/Kalender.html"
   },
   {
+    "id": "weiterbildung-2027-01-18",
+    "summary": "Box-Weiterbildungswoche Boxsport Harz",
+    "location": "Schullandheim Blankenburg, Heidelberg 14, 38889 Blankenburg/Harz",
+    "ics": "resources/ics/weiterbildung-2027-01-18.ics",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Box-Weiterbildungswoche%20Boxsport%20Harz&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FWeiterbildung-2027.html&location=Schullandheim%20Blankenburg%2C%20Heidelberg%2014%2C%2038889%20Blankenburg%2FHarz&ctz=Europe%2FBerlin&dates=20270118%2F20270123",
+    "page": "Weiterbildung-2027.html",
+    "kalender_match": "Box-Weiterbildungswoche",
+    "all_day": true,
+    "start_dt": null,
+    "end_dt": null,
+    "start_date": "20270118",
+    "end_date_exclusive": "20270123",
+    "source": "Angebot Schullandheim Blankenburg 11.11.2026; unverbindliche Interessensabfrage, Haus noch nicht gebucht, Buchung erst Januar 2027",
+    "page_url": "https://www.boxsport-harz.de/Weiterbildung-2027.html"
+  },
+  {
     "id": "max-schmeling-gedenk-fight-2027-02-13",
     "summary": "Max-Schmeling-Gedenk-Fight",
     "location": "Erfurt",

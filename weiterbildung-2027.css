@@ -1,0 +1,51 @@
+/* Seite Weiterbildung-2027.html – ergänzt das CI, ändert es nicht */
+.wb-facts {
+  display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 20px 0;
+}
+.wb-fact {
+  flex: 1 1 140px; background: #f4f4f5; border-top: 4px solid #121214;
+  padding: 12px 12px 10px 12px; min-width: 140px;
+}
+.wb-fact:nth-child(2) { border-top-color: #DD0000; }
+.wb-fact:nth-child(3) { border-top-color: #FFCE00; }
+.wb-fact:nth-child(4) { border-top-color: #DD0000; }
+.wb-fact b {
+  font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 22px; line-height: 1.05; color: #121214; display: block; margin: 0 0 3px 0;
+}
+.wb-fact span { font-size: 13px; line-height: 1.35; color: #4a4a50; display: block; }
+
+.wb-program { display: flex; flex-direction: column; gap: 8px; margin: 0 0 8px 0; }
+.wb-prog {
+  background: #fff; border-left: 5px solid #121214; padding: 10px 14px;
+  border-top: 1px solid #e1e1e5; border-right: 1px solid #e1e1e5; border-bottom: 1px solid #e1e1e5;
+}
+.wb-prog:nth-child(2) { border-left-color: #DD0000; }
+.wb-prog:nth-child(3) { border-left-color: #FFCE00; }
+.wb-prog:nth-child(4) { border-left-color: #DD0000; }
+.wb-prog-k {
+  font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 18px; color: #121214; margin: 0 0 2px 0;
+}
+.content .wb-prog p { margin: 0; font-size: 14px; line-height: 1.4; color: #1d1d20; }
+
+.wb-note {
+  background: #fff8f0; border: 2px solid #DD0000; padding: 14px 16px; margin: 16px 0 8px 0;
+}
+.wb-note-title {
+  font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 800; font-style: italic; text-transform: uppercase;
+  font-size: 20px; color: #a80000; margin: 0 0 6px 0;
+}
+.content .wb-note p, .content .wb-note ul { font-size: 14px; line-height: 1.45; margin: 0 0 8px 0; color: #1d1d20; }
+.content .wb-note ul { padding-left: 18px; margin-bottom: 0; }
+.content .wb-note li { margin-bottom: 4px; }
+
+.wb-hero-kampagne { display: none; } /* desktop: hero typography only; image used as og + social */
+
+@media screen and (max-width: 760px) {
+  .wb-facts { flex-direction: column !important; }
+  .wb-fact { flex: 1 1 auto; }
+}
