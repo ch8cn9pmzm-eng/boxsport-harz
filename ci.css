@@ -807,3 +807,22 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     width: auto !important;
   }
 }
+
+/* Startseite: Teaser Weiterbildungswoche mobil umbrechen (Titel und Button sichtbar) */
+@media screen and (max-width: 640px) {
+  #weiterbildung_2027.bh-teaser-home {
+    flex-wrap: wrap !important;
+    gap: 10px 12px !important;
+    padding: 12px 12px 14px 12px !important;
+  }
+  #weiterbildung_2027.bh-teaser-home .bh-teaser-ico {
+    width: 44px !important; max-width: 44px !important; height: auto !important; flex: 0 0 44px !important;
+  }
+  #weiterbildung_2027.bh-teaser-home .bh-teaser-text { flex: 1 1 0 !important; min-width: 0 !important; }
+  #weiterbildung_2027.bh-teaser-home .bh-teaser-title {
+    font-size: 21px !important; line-height: 1.05 !important; white-space: normal; overflow-wrap: anywhere;
+  }
+  #weiterbildung_2027.bh-teaser-home .bh-teaser-title span { display: block; white-space: normal; }
+  #weiterbildung_2027.bh-teaser-home .bh-teaser-sub { font-size: 13.5px !important; line-height: 1.4 !important; }
+  .content #weiterbildung_2027.bh-teaser-home > a.bh-btn { flex: 1 1 100% !important; width: 100% !important; text-align: center; }
+}
