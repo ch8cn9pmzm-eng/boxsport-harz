@@ -304,11 +304,27 @@
     "page_url": "https://www.boxsport-harz.de/Kalender.html"
   },
   {
+    "id": "paradise-fight-gala-jena-2027-02-13",
+    "summary": "Paradise Fight Gala Vol. 1",
+    "location": "Volkshaus Jena, Carl-Zeiß-Platz 15, 07743 Jena",
+    "ics": "resources/ics/paradise-fight-gala-jena-2027-02-13.ics",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Paradise%20Fight%20Gala%20Vol.%201&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FParadise-Fight-Gala-Jena-2027-02-13.html&location=Volkshaus%20Jena%2C%20Carl-Zei%C3%9F-Platz%2015%2C%2007743%20Jena&ctz=Europe%2FBerlin&dates=20270213T180000%2F20270213T235900",
+    "page": "Paradise-Fight-Gala-Jena-2027-02-13.html",
+    "kalender_match": "Paradise Fight Gala",
+    "all_day": false,
+    "start_dt": "20270213T180000",
+    "end_dt": "20270213T235900",
+    "start_date": null,
+    "end_date_exclusive": null,
+    "source": "paradise-gala.de: 13.02.2027, Volkshaus Jena, Einlass 17 Uhr, Beginn ca. 18 Uhr; Ende nicht angegeben → 23:59",
+    "page_url": "https://www.boxsport-harz.de/Paradise-Fight-Gala-Jena-2027-02-13.html"
+  },
+  {
     "id": "thueringer-meisterschaft-2027-03-13",
     "summary": "36. Thüringer Meisterschaft im Boxen",
-    "location": "",
+    "location": "Unstruthalle Sömmerda, Fichtestraße 23, 99610 Sömmerda",
     "ics": "resources/ics/thueringer-meisterschaft-2027-03-13.ics",
-    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=36.%20Th%C3%BCringer%20Meisterschaft%20im%20Boxen&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FKalender.html&location=&ctz=Europe%2FBerlin&dates=20270313%2F20270315",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=36.%20Th%C3%BCringer%20Meisterschaft%20im%20Boxen&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FKalender.html&location=Unstruthalle%20S%C3%B6mmerda%2C%20Fichtestra%C3%9Fe%2023%2C%2099610%20S%C3%B6mmerda&ctz=Europe%2FBerlin&dates=20270313%2F20270315",
     "page": null,
     "kalender_match": "Thüringer Meisterschaft im Boxen",
     "all_day": true,
@@ -316,7 +332,7 @@
     "end_dt": null,
     "start_date": "20270313",
     "end_date_exclusive": "20270315",
-    "source": "Kalender.html: 13./14.03.2027; Austragungsort noch nicht veröffentlicht; keine Uhrzeit → ganztägig",
+    "source": "Thüringer Box-Verband + Stadt Sömmerda: 13./14.03.2027, Unstruthalle Sömmerda (ESV Lok Sömmerda); keine Uhrzeit → ganztägig",
     "page_url": "https://www.boxsport-harz.de/Kalender.html"
   },
   {

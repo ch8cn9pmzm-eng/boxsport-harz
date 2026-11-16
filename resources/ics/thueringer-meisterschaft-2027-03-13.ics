@@ -23,10 +23,11 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:72ac2c6d36548904@boxsport-harz.de
-DTSTAMP:20261101T110000Z
+DTSTAMP:20261116T120000Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270315
 SUMMARY:36. Thüringer Meisterschaft im Boxen
+LOCATION:Unstruthalle Sömmerda\, Fichtestraße 23\, 99610 Sömmerda
 DESCRIPTION:Mehr Infos: https://www.boxsport-harz.de/Kalender.html
 URL:https://www.boxsport-harz.de/Kalender.html
 END:VEVENT
