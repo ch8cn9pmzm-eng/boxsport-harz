@@ -350,5 +350,21 @@
     "end_date_exclusive": "20270919",
     "source": "Thüringer Box-Verband: 18.09.2027, Veranstalter PSV Erfurt; Austragungsstätte, Beginn und Eintritt nicht veröffentlicht → ganztägig, ohne Ort",
     "page_url": "https://www.boxsport-harz.de/Braugold-Cup-2027-09-18.html"
+  },
+  {
+    "id": "playground-boxing-dresden-2027-01-22",
+    "summary": "Playground Boxing: Dresden vs. Berlin",
+    "location": "Alter Schlachthof Dresden, Gothaer Straße 11, 01097 Dresden",
+    "ics": "resources/ics/playground-boxing-dresden-2027-01-22.ics",
+    "google": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Playground%20Boxing%3A%20Dresden%20vs.%20Berlin&details=Mehr%20Infos%3A%20https%3A%2F%2Fwww.boxsport-harz.de%2FPlayground-Boxing-Dresden-2027-01-22.html&location=Alter%20Schlachthof%20Dresden%2C%20Gothaer%20Stra%C3%9Fe%2011%2C%2001097%20Dresden&ctz=Europe%2FBerlin&dates=20270122T193000%2F20270122T230000",
+    "page": "Playground-Boxing-Dresden-2027-01-22.html",
+    "kalender_match": "Playground Boxing",
+    "all_day": false,
+    "start_dt": "20270122T193000",
+    "end_dt": "20270122T230000",
+    "start_date": null,
+    "end_date_exclusive": null,
+    "source": "playgroundboxing.de / rundeeins.de: 22.01.2027, Alter Schlachthof Dresden, Einlass 18:30, Beginn 19:30; Ende nicht angegeben → 23:00",
+    "page_url": "https://www.boxsport-harz.de/Playground-Boxing-Dresden-2027-01-22.html"
   }
 ]
